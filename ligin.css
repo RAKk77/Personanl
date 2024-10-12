@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", system-ui;
+}
+:root {
+  --borderAnd--Color: #0a0a0a;
+  --Border-Cr: #888;
+  --Txt--colr: rgb(255, 255, 255);
+  --primary-backNote: rgb(13, 124, 56);
+}
+.contentss {
+  width: 85%;
+  margin: 0 auto;
+}
+/* Navigation bar */
+nav {
+  width: 100%;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px;
+  z-index: 2;
+}
+nav .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.icon .fa-bars {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.logo .logo-txt {
+  width: 180px;
+  margin-left: 190px;
+  /* margin-right: 50px; */
+  cursor: pointer;
+}
+.container .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+/* Menu notification and search */
+.menu .search {
+  position: relative;
+}
+.search .input {
+  width: 150px;
+  padding-left: 2.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1.4px solid black;
+  outline: none;
+  background: transparent;
+  color: #0d0c22;
+}
+.search .fa-solid {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.menu .search .fa-magnifying-glass {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.notification .login {
+  font-size: 1.1rem;
+  font-weight: 400;
+  cursor: pointer;
+  /* margin: ; */
+  text-decoration: none;
+  color: var(--borderAnd--Color);
+}
+/* login form */
+/* From Uiverse.io by alexruix */
+
+.Content-form {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+.tile-login {
+  text-align: center;
+  position: absolute;
+  top: -30px;
+  border-radius: 25px;
+  padding: 2px 25px;
+  background: white;
+  margin: 20px 0 10px 309px;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  outline: 1px solid #4f4f4f;
+  font-size: 2.1rem;
+}
+.Content-form .Login-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  outline: 1px solid #4f4f4f;
+  margin: 0 auto;
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  padding: 50px 20px;
+  z-index: -1;
+
+  background: linear-gradient(
+  to top,
+    rgba(255, 255, 255, 20) 90%,
+    rgba(47, 45, 45, 1) 44%
+  );
+  
+}
+
+/* /* From Uiverse.io by G4b413l */
+.group {
+  position: relative;
+}
+.input-user {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding-left: 10px;
+  border: 1px solid var(--borderAnd--Color);
+  background: transparent;
+}
+
+.input-user:focus {
+  outline: none;
+}
+
+.label-user {
+  color: #7e7e7e;
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 20px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.input-user:focus ~ .label-user,
+.input-user:valid ~ .label-user {
+  top: -3px;
+  font-size: 12px;
+  background: #ffffff;
+  outline: 1px solid var(--borderAnd--Color);
+  color: var(--borderAnd--Color);
+}
+/* ./////Button Login  */
+/* /* From Uiverse.io by alexroumi */
+.group-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+.group-btn .btn-name {
+  margin: 10px 0;
+  font-size: 13px;
+}
+button {
+  padding: 5px 20px;
+  border: unset;
+  border-radius: 20px 0 25px 0;
+  color: #000000;
+  background: var(--Txt--colr);
+  z-index: 1;
+  /* background: #e8e8e8; */
+  border: 1px solid var(--borderAnd--Color);
+  position: relative;
+  font-size: 15px;
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #212121;
+  z-index: -1;
+  transition: all 250ms;
+}
+
+button:hover {
+  color: #e8e8e8;
+}
+
+button:hover::before {
+  width: 100%;
+}
